@@ -288,16 +288,38 @@ para a sustentabilidade financeira da agricultura familiar da região.
 ## 11. Integração Contínua (CI) com GitHub Actions
 
 ### O que é integração contínua?
-Integração contínua é a prática de verificar o código automaticamente toda vez
-que alguém envia uma mudança para o repositório. Em vez de descobrir um erro
-só no fim do projeto, um "robô" (aqui, o GitHub Actions) instala o projeto do
-zero, roda os testes e avisa na hora se algo quebrou.
+Vou explicar do jeito que a gente entendeu. Quando várias pessoas
+programam o mesmo projeto, é muito fácil alguém mexer numa coisa e,
+sem querer, estragar outra. E o pior: ninguém percebe na hora.
+
+A integração contínua (a gente também chama de CI) resolve isso. Toda
+vez que alguém envia uma mudança para o repositório, um robô entra em
+ação sozinho: ele baixa o projeto, instala tudo do zero e roda os
+testes. Se estiver tudo certo, aparece um ✅ verde. Se alguma coisa
+quebrou, aparece um ❌ vermelho, dizendo onde foi o problema.
+
+Pensa assim: você mexe numa linha do login e acha que ficou certo. Sem
+CI, o erro só aparece quando outra pessoa for usar o sistema, talvez
+dias depois, e ninguém sabe qual mudança causou aquilo. Com CI, o robô
+testa o login logo depois do envio e já te avisa. Dá para consertar
+na hora, antes de atrapalhar o resto do grupo.
 
 ### Por que isso importa para quem está aprendendo a programar?
-- Você descobre seus erros rápido, com o código ainda fresco na cabeça.
-- Aprende a escrever código que pode ser testado, um hábito valorizado no mercado.
-- Em trabalho de equipe, a mudança de um colega não quebra a sua sem ninguém perceber.
-- Você ganha confiança para mexer no código: se algo estragar, o teste avisa.
+Pra quem está começando, errar faz parte, e a CI deixa isso mais
+tranquilo:
+
+- **O erro aparece rápido.** Você descobre o problema minutos depois,
+  com o código ainda fresco na cabeça, e não só na hora da entrega.
+- **Dá menos medo de mexer no código.** Se algo quebrar, os testes
+  avisam. Então a gente pode tentar, testar e aprender sem tanto receio.
+- **Trabalhar em grupo fica mais leve.** A mudança de um colega não
+  derruba a sua sem aviso, e a sua também não derruba a dele.
+- **É o que acontece no mercado de trabalho.** Muitas equipes de
+  software usam CI no dia a dia, então aprender isso agora já é um
+  passo para o estágio e o primeiro emprego.
+
+Neste projeto, o robô é o GitHub Actions. Logo abaixo, a gente mostra
+como ele foi configurado.
 
 ### Objetivo neste projeto
 Garantir que o backend do AgriGest (Node.js + Express + SQLite) continue
