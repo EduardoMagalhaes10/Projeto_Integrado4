@@ -4,7 +4,7 @@ Sistema de Gestão de Feiras Agroecológicas. Projeto desenvolvido para a discip
 de Projeto Integrado III (ADS / CEAD UFCA) — Entregável Parcial 3 (EP3).
 
 **Equipe:** Danilo Barros de Novaes, Filipi Emanuel Pinto Teixeira, Eduardo Magalhães,
-Eyshila Serena Ferreira Mota.
+Eyshila Serena Ferreira Mota, Patrícia Santos Ramos.
 
 ---
 
