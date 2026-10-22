@@ -339,9 +339,19 @@ O arquivo [`.github/workflows/ci.yml`](.github/workflows/ci.yml) executa, em uma
 O resultado aparece na aba **Actions** do GitHub: ✅ tudo certo, ❌ algo falhou.
 
 ### Como rodar os testes na sua máquina
+
 ```bash
 cd backend
 npm install
 npm run check
 npm test
 ```
+
+#### Sem instalar nada: rodando no GitHub Codespaces
+
+Se não for possível instalar o Node.js no seu computador, dá para rodar os testes direto no navegador:
+
+1. No repositório, clique em **Code → Codespaces → Create codespace on main**.
+2. No terminal que abrir, confira `node -v`. O projeto precisa do Node 22.5 ou mais; se aparecer uma versão menor, rode `nvm install 22` e depois `nvm use 22`.
+3. Rode `cd backend`, depois `npm install`, `npm run check` e `npm test`.
+4. O esperado é a verificação sem erros e todos os testes passando.
