@@ -55,6 +55,16 @@ test('login com senha errada retorna 401', async () => {
   assert.equal(res.status, 401);
 });
 
+test('login com e-mail inexistente retorna 401', async () => {
+  const res = await fetch(`${base}/api/auth/login`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ email: 'naoexiste@agrigest.com', senha: 'qualquer' }),
+  });
+  assert.equal(res.status, 401);
+  assert.equal((await res.json()).erro, 'Email ou senha inválidos.');
+});
+
 test('login válido retorna token JWT', async () => {
   const res = await fetch(`${base}/api/auth/login`, {
     method: 'POST',
