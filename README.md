@@ -1,5 +1,5 @@
 # AgriGest — MVP Web Funcional
-[CI](https://github.com/EduardoMagalhaes10/Projeto_Integrado4/actions/workflows/ci.yml/badge.svg
+![CI](https://github.com/EduardoMagalhaes10/Projeto_Integrado4/actions/workflows/ci.yml/badge.svg
 
 Sistema de Gestão de Feiras Agroecológicas. Projeto desenvolvido para a disciplina
 de Projeto Integrado III (ADS / CEAD UFCA) — Entregável Parcial 3 (EP3).
